@@ -14,6 +14,13 @@
 		5B58BB2517C4AC4500B8F6D5 /* pinball-shapes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B58BB2017C4AC4500B8F6D5 /* pinball-shapes.plist */; };
 		5B58BB2617C4AC4500B8F6D5 /* pinball.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B58BB2117C4AC4500B8F6D5 /* pinball.plist */; };
 		5B58BB2717C4AC4500B8F6D5 /* pinball.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 5B58BB2217C4AC4500B8F6D5 /* pinball.pvr.ccz */; };
+		5B58BB2A17C4B41100B8F6D5 /* BodySprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB2917C4B41100B8F6D5 /* BodySprite.mm */; };
+		5B58BB2E17C4B5C700B8F6D5 /* Helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB2D17C4B5C700B8F6D5 /* Helper.mm */; };
+		5B58BB3117C4C08500B8F6D5 /* TablePart.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3017C4C08500B8F6D5 /* TablePart.mm */; };
+		5B58BB3417C4C1CD00B8F6D5 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3317C4C1CD00B8F6D5 /* HelloWorldLayer.mm */; };
+		5B58BB3717C4C45E00B8F6D5 /* TableSetup.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3617C4C45E00B8F6D5 /* TableSetup.mm */; };
+		5B58BB3A17C4C7FE00B8F6D5 /* PinballTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3917C4C7FE00B8F6D5 /* PinballTable.mm */; };
+		5B58BB3D17C4C88E00B8F6D5 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3C17C4C88E00B8F6D5 /* ContactListener.mm */; };
 		DC0864C115BD8E1E0044A820 /* ccCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0864C015BD8E1E0044A820 /* ccCArray.m */; };
 		DC0864C515BD8E330044A820 /* CCNode+Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0864C315BD8E330044A820 /* CCNode+Debug.h */; };
 		DC0864C615BD8E330044A820 /* CCNode+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0864C415BD8E330044A820 /* CCNode+Debug.m */; };
@@ -39,7 +46,6 @@
 		DC16B7EA1566A9C9004C3403 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = DC16B7E91566A9C9004C3403 /* iTunesArtwork */; };
 		DC16B9D51566A9CD004C3403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC16B9D41566A9CD004C3403 /* main.m */; };
 		DC16B9D81566A9CD004C3403 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC16B9D71566A9CD004C3403 /* AppDelegate.mm */; };
-		DC16B9DB1566A9CD004C3403 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC16B9DA1566A9CD004C3403 /* HelloWorldLayer.mm */; };
 		DC16B9DE1566A9CD004C3403 /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC16B9DD1566A9CD004C3403 /* GLES-Render.mm */; };
 		DC16B9E11566A9CD004C3403 /* PhysicsSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = DC16B9E01566A9CD004C3403 /* PhysicsSprite.mm */; };
 		DC16B9E31566A9CD004C3403 /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = DC16B9E21566A9CD004C3403 /* blocks.png */; };
@@ -362,7 +368,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5B58BB1917C494D500B8F6D5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5B58BB1917C494D500B8F6D5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		5B58BB1B17C4950600B8F6D5 /* GB2ShapeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GB2ShapeCache.h; path = ../GB2ShapeCache.h; sourceTree = "<group>"; };
 		5B58BB1C17C4950600B8F6D5 /* GB2ShapeCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = GB2ShapeCache.mm; path = ../GB2ShapeCache.mm; sourceTree = "<group>"; };
 		5B58BB1E17C4AC4500B8F6D5 /* pinball-hd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pinball-hd.plist"; sourceTree = "<group>"; };
@@ -370,10 +376,25 @@
 		5B58BB2017C4AC4500B8F6D5 /* pinball-shapes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "pinball-shapes.plist"; sourceTree = "<group>"; };
 		5B58BB2117C4AC4500B8F6D5 /* pinball.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pinball.plist; sourceTree = "<group>"; };
 		5B58BB2217C4AC4500B8F6D5 /* pinball.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = pinball.pvr.ccz; sourceTree = "<group>"; };
+		5B58BB2817C4B41100B8F6D5 /* BodySprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BodySprite.h; sourceTree = "<group>"; };
+		5B58BB2917C4B41100B8F6D5 /* BodySprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BodySprite.mm; sourceTree = "<group>"; };
+		5B58BB2B17C4B5C700B8F6D5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		5B58BB2C17C4B5C700B8F6D5 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		5B58BB2D17C4B5C700B8F6D5 /* Helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Helper.mm; sourceTree = "<group>"; };
+		5B58BB2F17C4C08500B8F6D5 /* TablePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TablePart.h; sourceTree = "<group>"; };
+		5B58BB3017C4C08500B8F6D5 /* TablePart.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TablePart.mm; sourceTree = "<group>"; };
+		5B58BB3217C4C1CC00B8F6D5 /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		5B58BB3317C4C1CD00B8F6D5 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
+		5B58BB3517C4C45D00B8F6D5 /* TableSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSetup.h; sourceTree = "<group>"; };
+		5B58BB3617C4C45E00B8F6D5 /* TableSetup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TableSetup.mm; sourceTree = "<group>"; };
+		5B58BB3817C4C7FD00B8F6D5 /* PinballTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinballTable.h; sourceTree = "<group>"; };
+		5B58BB3917C4C7FE00B8F6D5 /* PinballTable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PinballTable.mm; sourceTree = "<group>"; };
+		5B58BB3B17C4C88E00B8F6D5 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
+		5B58BB3C17C4C88E00B8F6D5 /* ContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ContactListener.mm; sourceTree = "<group>"; };
 		DC0864C015BD8E1E0044A820 /* ccCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccCArray.m; sourceTree = "<group>"; };
 		DC0864C315BD8E330044A820 /* CCNode+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+Debug.h"; sourceTree = "<group>"; };
 		DC0864C415BD8E330044A820 /* CCNode+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+Debug.m"; sourceTree = "<group>"; };
-		DC16B7BC1566A9C9004C3403 /* PinBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC16B7BC1566A9C9004C3403 /* Pinball.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pinball.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC16B7C01566A9C9004C3403 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DC16B7C21566A9C9004C3403 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		DC16B7C41566A9C9004C3403 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -399,8 +420,6 @@
 		DC16B9D41566A9CD004C3403 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC16B9D61566A9CD004C3403 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DC16B9D71566A9CD004C3403 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		DC16B9D91566A9CD004C3403 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		DC16B9DA1566A9CD004C3403 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		DC16B9DC1566A9CD004C3403 /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		DC16B9DD1566A9CD004C3403 /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		DC16B9DF1566A9CD004C3403 /* PhysicsSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhysicsSprite.h; sourceTree = "<group>"; };
@@ -763,7 +782,6 @@
 		DC16B7B11566A9C9004C3403 = {
 			isa = PBXGroup;
 			children = (
-				5B58BB1917C494D500B8F6D5 /* Default-568h@2x.png */,
 				DC16B7D21566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS */,
 				DC16B7BF1566A9C9004C3403 /* Frameworks */,
 				DC16B7BD1566A9C9004C3403 /* Products */,
@@ -773,7 +791,7 @@
 		DC16B7BD1566A9C9004C3403 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC16B7BC1566A9C9004C3403 /* PinBall.app */,
+				DC16B7BC1566A9C9004C3403 /* Pinball.temp_caseinsensitive_rename.app */,
 				DC16B9ED1566AA14004C3403 /* libcocos2d-library.a */,
 			);
 			name = Products;
@@ -798,17 +816,30 @@
 		DC16B7D21566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5B58BB3B17C4C88E00B8F6D5 /* ContactListener.h */,
+				5B58BB3C17C4C88E00B8F6D5 /* ContactListener.mm */,
+				5B58BB2B17C4B5C700B8F6D5 /* Constants.h */,
+				5B58BB2C17C4B5C700B8F6D5 /* Helper.h */,
+				5B58BB2D17C4B5C700B8F6D5 /* Helper.mm */,
 				DC16B9D61566A9CD004C3403 /* AppDelegate.h */,
 				DC16B9D71566A9CD004C3403 /* AppDelegate.mm */,
-				DC16B9D91566A9CD004C3403 /* HelloWorldLayer.h */,
-				DC16B9DA1566A9CD004C3403 /* HelloWorldLayer.mm */,
 				DC16B9DC1566A9CD004C3403 /* GLES-Render.h */,
 				DC16B9DD1566A9CD004C3403 /* GLES-Render.mm */,
 				DC16B9DF1566A9CD004C3403 /* PhysicsSprite.h */,
 				DC16B9E01566A9CD004C3403 /* PhysicsSprite.mm */,
+				5B58BB3217C4C1CC00B8F6D5 /* HelloWorldLayer.h */,
+				5B58BB3317C4C1CD00B8F6D5 /* HelloWorldLayer.mm */,
 				DC16B7D31566A9C9004C3403 /* Resources */,
 				DC16B9D21566A9CD004C3403 /* Supporting Files */,
 				DC16B9F91566AA61004C3403 /* libs */,
+				5B58BB2817C4B41100B8F6D5 /* BodySprite.h */,
+				5B58BB2917C4B41100B8F6D5 /* BodySprite.mm */,
+				5B58BB2F17C4C08500B8F6D5 /* TablePart.h */,
+				5B58BB3017C4C08500B8F6D5 /* TablePart.mm */,
+				5B58BB3517C4C45D00B8F6D5 /* TableSetup.h */,
+				5B58BB3617C4C45E00B8F6D5 /* TableSetup.mm */,
+				5B58BB3817C4C7FD00B8F6D5 /* PinballTable.h */,
+				5B58BB3917C4C7FE00B8F6D5 /* PinballTable.mm */,
 			);
 			path = "cocos2d-2.x-Box2D-ARC-iOS";
 			sourceTree = "<group>";
@@ -816,6 +847,7 @@
 		DC16B7D31566A9C9004C3403 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5B58BB1917C494D500B8F6D5 /* Default-568h@2x.png */,
 				5B58BB1E17C4AC4500B8F6D5 /* pinball-hd.plist */,
 				5B58BB1F17C4AC4500B8F6D5 /* pinball-hd.pvr.ccz */,
 				5B58BB2017C4AC4500B8F6D5 /* pinball-shapes.plist */,
@@ -1526,9 +1558,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DC16B7BB1566A9C9004C3403 /* PinBall */ = {
+		DC16B7BB1566A9C9004C3403 /* Pinball.temp_caseinsensitive_rename */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "PinBall" */;
+			buildConfigurationList = DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "Pinball.temp_caseinsensitive_rename" */;
 			buildPhases = (
 				DC16B7B81566A9C9004C3403 /* Sources */,
 				DC16B7B91566A9C9004C3403 /* Frameworks */,
@@ -1538,9 +1570,9 @@
 			);
 			dependencies = (
 			);
-			name = PinBall;
+			name = Pinball.temp_caseinsensitive_rename;
 			productName = "cocos2d-2.x-Box2D-ARC-iOS";
-			productReference = DC16B7BC1566A9C9004C3403 /* PinBall.app */;
+			productReference = DC16B7BC1566A9C9004C3403 /* Pinball.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DC16B9EC1566AA14004C3403 /* cocos2d-library */ = {
@@ -1568,7 +1600,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "PinBall" */;
+			buildConfigurationList = DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "Pinball" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1580,7 +1612,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC16B7BB1566A9C9004C3403 /* PinBall */,
+				DC16B7BB1566A9C9004C3403 /* Pinball.temp_caseinsensitive_rename */,
 				DC16B9EC1566AA14004C3403 /* cocos2d-library */,
 			);
 		};
@@ -1621,10 +1653,16 @@
 			files = (
 				DC16B9D51566A9CD004C3403 /* main.m in Sources */,
 				DC16B9D81566A9CD004C3403 /* AppDelegate.mm in Sources */,
-				DC16B9DB1566A9CD004C3403 /* HelloWorldLayer.mm in Sources */,
 				DC16B9DE1566A9CD004C3403 /* GLES-Render.mm in Sources */,
 				DC16B9E11566A9CD004C3403 /* PhysicsSprite.mm in Sources */,
 				5B58BB1D17C4950600B8F6D5 /* GB2ShapeCache.mm in Sources */,
+				5B58BB2A17C4B41100B8F6D5 /* BodySprite.mm in Sources */,
+				5B58BB2E17C4B5C700B8F6D5 /* Helper.mm in Sources */,
+				5B58BB3117C4C08500B8F6D5 /* TablePart.mm in Sources */,
+				5B58BB3417C4C1CD00B8F6D5 /* HelloWorldLayer.mm in Sources */,
+				5B58BB3717C4C45E00B8F6D5 /* TableSetup.mm in Sources */,
+				5B58BB3A17C4C7FE00B8F6D5 /* PinballTable.mm in Sources */,
+				5B58BB3D17C4C88E00B8F6D5 /* ContactListener.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1851,7 +1889,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = PinBall;
+				PRODUCT_NAME = Pinball.temp_caseinsensitive_rename;
 				USER_HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-iOS/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1874,7 +1912,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = PinBall;
+				PRODUCT_NAME = Pinball.temp_caseinsensitive_rename;
 				USER_HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-iOS/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1928,7 +1966,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "PinBall" */ = {
+		DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "Pinball" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC16B9E41566A9CD004C3403 /* Debug */,
@@ -1937,7 +1975,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "PinBall" */ = {
+		DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "Pinball.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC16B9E71566A9CD004C3403 /* Debug */,
