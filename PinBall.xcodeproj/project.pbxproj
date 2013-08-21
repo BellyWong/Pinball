@@ -373,7 +373,7 @@
 		DC0864C015BD8E1E0044A820 /* ccCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccCArray.m; sourceTree = "<group>"; };
 		DC0864C315BD8E330044A820 /* CCNode+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+Debug.h"; sourceTree = "<group>"; };
 		DC0864C415BD8E330044A820 /* CCNode+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+Debug.m"; sourceTree = "<group>"; };
-		DC16B7BC1566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cocos2d-2.x-Box2D-ARC-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC16B7BC1566A9C9004C3403 /* PinBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC16B7C01566A9C9004C3403 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DC16B7C21566A9C9004C3403 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		DC16B7C41566A9C9004C3403 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
@@ -773,7 +773,7 @@
 		DC16B7BD1566A9C9004C3403 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC16B7BC1566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS.app */,
+				DC16B7BC1566A9C9004C3403 /* PinBall.app */,
 				DC16B9ED1566AA14004C3403 /* libcocos2d-library.a */,
 			);
 			name = Products;
@@ -1526,9 +1526,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DC16B7BB1566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS */ = {
+		DC16B7BB1566A9C9004C3403 /* PinBall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "cocos2d-2.x-Box2D-ARC-iOS" */;
+			buildConfigurationList = DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "PinBall" */;
 			buildPhases = (
 				DC16B7B81566A9C9004C3403 /* Sources */,
 				DC16B7B91566A9C9004C3403 /* Frameworks */,
@@ -1538,9 +1538,9 @@
 			);
 			dependencies = (
 			);
-			name = "cocos2d-2.x-Box2D-ARC-iOS";
+			name = PinBall;
 			productName = "cocos2d-2.x-Box2D-ARC-iOS";
-			productReference = DC16B7BC1566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS.app */;
+			productReference = DC16B7BC1566A9C9004C3403 /* PinBall.app */;
 			productType = "com.apple.product-type.application";
 		};
 		DC16B9EC1566AA14004C3403 /* cocos2d-library */ = {
@@ -1568,7 +1568,7 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 			};
-			buildConfigurationList = DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "cocos2d-2.x-Box2D-ARC-iOS" */;
+			buildConfigurationList = DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "PinBall" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1580,7 +1580,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DC16B7BB1566A9C9004C3403 /* cocos2d-2.x-Box2D-ARC-iOS */,
+				DC16B7BB1566A9C9004C3403 /* PinBall */,
 				DC16B9EC1566AA14004C3403 /* cocos2d-library */,
 			);
 		};
@@ -1851,7 +1851,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PinBall;
 				USER_HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-iOS/libs\"";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1874,7 +1874,7 @@
 					"-lz",
 					"-ObjC",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PinBall;
 				USER_HEADER_SEARCH_PATHS = "\"cocos2d-2.x-Box2D-ARC-iOS/libs\"";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -1928,7 +1928,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "cocos2d-2.x-Box2D-ARC-iOS" */ = {
+		DC16B7B61566A9C9004C3403 /* Build configuration list for PBXProject "PinBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC16B9E41566A9CD004C3403 /* Debug */,
@@ -1937,7 +1937,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "cocos2d-2.x-Box2D-ARC-iOS" */ = {
+		DC16B9E61566A9CD004C3403 /* Build configuration list for PBXNativeTarget "PinBall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DC16B9E71566A9CD004C3403 /* Debug */,

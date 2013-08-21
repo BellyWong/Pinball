@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DC16B7BB1566A9C9004C3403"
                BuildableName = "cocos2d-2.x-Box2D-ARC-iOS.app"
-               BlueprintName = "cocos2d-2.x-Box2D-ARC-iOS"
-               ReferencedContainer = "container:cocos2d-2.x-Box2D-ARC-iOS.xcodeproj">
+               BlueprintName = "PinBall"
+               ReferencedContainer = "container:PinBall.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC16B7BB1566A9C9004C3403"
             BuildableName = "cocos2d-2.x-Box2D-ARC-iOS.app"
-            BlueprintName = "cocos2d-2.x-Box2D-ARC-iOS"
-            ReferencedContainer = "container:cocos2d-2.x-Box2D-ARC-iOS.xcodeproj">
+            BlueprintName = "PinBall"
+            ReferencedContainer = "container:PinBall.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC16B7BB1566A9C9004C3403"
             BuildableName = "cocos2d-2.x-Box2D-ARC-iOS.app"
-            BlueprintName = "cocos2d-2.x-Box2D-ARC-iOS"
-            ReferencedContainer = "container:cocos2d-2.x-Box2D-ARC-iOS.xcodeproj">
+            BlueprintName = "PinBall"
+            ReferencedContainer = "container:PinBall.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DC16B7BB1566A9C9004C3403"
             BuildableName = "cocos2d-2.x-Box2D-ARC-iOS.app"
-            BlueprintName = "cocos2d-2.x-Box2D-ARC-iOS"
-            ReferencedContainer = "container:cocos2d-2.x-Box2D-ARC-iOS.xcodeproj">
+            BlueprintName = "PinBall"
+            ReferencedContainer = "container:PinBall.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

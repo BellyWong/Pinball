@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:cocos2d-2.x-Box2D-ARC-iOS.xcodeproj">
+      location = "self:PinBall.xcodeproj">
    </FileRef>
 </Workspace>
