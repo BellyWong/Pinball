@@ -50,7 +50,7 @@
 		x += c*-anchorPointInPoints_.x + -s*-anchorPointInPoints_.y;
 		y += s*-anchorPointInPoints_.x + c*-anchorPointInPoints_.y;
 	}
-	
+	self.position = CGPointMake(x, y);
 	// Rot, Translate Matrix
 	transform_ = CGAffineTransformMake( c,  s,
 									   -s,	c,

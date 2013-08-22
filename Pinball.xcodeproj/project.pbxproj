@@ -19,8 +19,9 @@
 		5B58BB3117C4C08500B8F6D5 /* TablePart.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3017C4C08500B8F6D5 /* TablePart.mm */; };
 		5B58BB3417C4C1CD00B8F6D5 /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3317C4C1CD00B8F6D5 /* HelloWorldLayer.mm */; };
 		5B58BB3717C4C45E00B8F6D5 /* TableSetup.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3617C4C45E00B8F6D5 /* TableSetup.mm */; };
-		5B58BB3A17C4C7FE00B8F6D5 /* PinballTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3917C4C7FE00B8F6D5 /* PinballTable.mm */; };
 		5B58BB3D17C4C88E00B8F6D5 /* ContactListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3C17C4C88E00B8F6D5 /* ContactListener.mm */; };
+		5B58BB4017C4CC7C00B8F6D5 /* PinballTableLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5B58BB3F17C4CC7C00B8F6D5 /* PinballTableLayer.mm */; };
+		5BB70A2B17C5B9A000C2EE1C /* Ball.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5BB70A2A17C5B9A000C2EE1C /* Ball.mm */; };
 		DC0864C115BD8E1E0044A820 /* ccCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0864C015BD8E1E0044A820 /* ccCArray.m */; };
 		DC0864C515BD8E330044A820 /* CCNode+Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0864C315BD8E330044A820 /* CCNode+Debug.h */; };
 		DC0864C615BD8E330044A820 /* CCNode+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0864C415BD8E330044A820 /* CCNode+Debug.m */; };
@@ -387,10 +388,12 @@
 		5B58BB3317C4C1CD00B8F6D5 /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
 		5B58BB3517C4C45D00B8F6D5 /* TableSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableSetup.h; sourceTree = "<group>"; };
 		5B58BB3617C4C45E00B8F6D5 /* TableSetup.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TableSetup.mm; sourceTree = "<group>"; };
-		5B58BB3817C4C7FD00B8F6D5 /* PinballTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinballTable.h; sourceTree = "<group>"; };
-		5B58BB3917C4C7FE00B8F6D5 /* PinballTable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PinballTable.mm; sourceTree = "<group>"; };
 		5B58BB3B17C4C88E00B8F6D5 /* ContactListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactListener.h; sourceTree = "<group>"; };
 		5B58BB3C17C4C88E00B8F6D5 /* ContactListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ContactListener.mm; sourceTree = "<group>"; };
+		5B58BB3E17C4CC7C00B8F6D5 /* PinballTableLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinballTableLayer.h; sourceTree = "<group>"; };
+		5B58BB3F17C4CC7C00B8F6D5 /* PinballTableLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PinballTableLayer.mm; sourceTree = "<group>"; };
+		5BB70A2917C5B9A000C2EE1C /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		5BB70A2A17C5B9A000C2EE1C /* Ball.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Ball.mm; sourceTree = "<group>"; };
 		DC0864C015BD8E1E0044A820 /* ccCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccCArray.m; sourceTree = "<group>"; };
 		DC0864C315BD8E330044A820 /* CCNode+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+Debug.h"; sourceTree = "<group>"; };
 		DC0864C415BD8E330044A820 /* CCNode+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+Debug.m"; sourceTree = "<group>"; };
@@ -836,10 +839,12 @@
 				5B58BB2917C4B41100B8F6D5 /* BodySprite.mm */,
 				5B58BB2F17C4C08500B8F6D5 /* TablePart.h */,
 				5B58BB3017C4C08500B8F6D5 /* TablePart.mm */,
+				5BB70A2917C5B9A000C2EE1C /* Ball.h */,
+				5BB70A2A17C5B9A000C2EE1C /* Ball.mm */,
 				5B58BB3517C4C45D00B8F6D5 /* TableSetup.h */,
 				5B58BB3617C4C45E00B8F6D5 /* TableSetup.mm */,
-				5B58BB3817C4C7FD00B8F6D5 /* PinballTable.h */,
-				5B58BB3917C4C7FE00B8F6D5 /* PinballTable.mm */,
+				5B58BB3E17C4CC7C00B8F6D5 /* PinballTableLayer.h */,
+				5B58BB3F17C4CC7C00B8F6D5 /* PinballTableLayer.mm */,
 			);
 			path = "cocos2d-2.x-Box2D-ARC-iOS";
 			sourceTree = "<group>";
@@ -1661,8 +1666,9 @@
 				5B58BB3117C4C08500B8F6D5 /* TablePart.mm in Sources */,
 				5B58BB3417C4C1CD00B8F6D5 /* HelloWorldLayer.mm in Sources */,
 				5B58BB3717C4C45E00B8F6D5 /* TableSetup.mm in Sources */,
-				5B58BB3A17C4C7FE00B8F6D5 /* PinballTable.mm in Sources */,
 				5B58BB3D17C4C88E00B8F6D5 /* ContactListener.mm in Sources */,
+				5B58BB4017C4CC7C00B8F6D5 /* PinballTableLayer.mm in Sources */,
+				5BB70A2B17C5B9A000C2EE1C /* Ball.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

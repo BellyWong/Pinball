@@ -2,7 +2,7 @@
 //  HelloWorldLayer.h
 //  cocos2d-2.x-Box2D-ARC-iOS
 //
-//  Created by Steffen Itterheim on 18.05.12.
+//  Created by Martin on 18.05.12.
 //  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 

@@ -7,6 +7,7 @@
 //
 
 #import "TableSetup.h"
+#import "Ball.h"
 #import "TablePart.h"
 
 
@@ -18,7 +19,10 @@
         // add the table blocks
         [self addChild:[TablePart tablePartInWorld:world position:ccp(0, 480) name:@"table-top"]];
         [self addChild:[TablePart tablePartInWorld:world position:ccp(0, 0)   name:@"table-bottom"]];
-        [self addChild:[TablePart tablePartInWorld:world position:ccp(0, 263) name:@"table-lef"]];
+        [self addChild:[TablePart tablePartInWorld:world position:ccp(0, 263) name:@"table-left"]];
+        
+        Ball* ball = [Ball ballWithWorld:world];
+        [self addChild:ball z:-1];
     }
     return self;
 }
