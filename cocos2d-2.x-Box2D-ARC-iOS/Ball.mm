@@ -7,6 +7,8 @@
 //
 
 #import "Ball.h"
+#import "SimpleAudioEngine.h"
+#import "ContactListener.h"
 
 
 @implementation Ball
@@ -54,14 +56,15 @@
 {
     if (moveToFinger == YES)
     {
-        [self applyForceTowardsFinger];
+        // disabled: no longer needed
+        // [self applyForceTowardsFinger];
     }
     if (self.position.y < -(self.contentSize.height * 10)) {
         [self setBallStartPosition];
     }
     
-    // limit spedd of the ball
-    const float32 maxSpeed = 6.0f;
+    // limit speed of the ball
+    const float32 maxSpeed = 8.0f;
     b2Vec2 velocity = physicsBody->GetLinearVelocity();
     float32 speed = velocity.Length();
     if (speed > maxSpeed) {
@@ -101,4 +104,23 @@
     b2Vec2 force = 2.0f * bodyToFingerDirection;
     physicsBody->ApplyForce(force, physicsBody->GetWorldCenter());
 }
+
+
+-(void) playSound
+{
+    float pitch = 0.9f + CCRANDOM_0_1() * 0.2f;
+    float gain = 1.0f + CCRANDOM_0_1() * 0.3f;
+    [[SimpleAudioEngine sharedEngine] playEffect:@"bumper.wav" pitch:pitch pan:0.0f gain:gain];
+}
+
+-(void) endContactWithBumper:(Contact*)contact
+{
+    [self playSound];
+}
+
+-(void) endContactWithPlunger:(Contact*)contact
+{
+    [self playSound];
+}
+
 @end
